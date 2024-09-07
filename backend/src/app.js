@@ -14,11 +14,7 @@ app.use((req, res, next) => {
 
 app.use(limiter)
 
-app.use(cors(
-    {
-      origin: []
-    }
-));
+app.use(cors());
 
 morgan.format('custom', ':method :url :status :res[content-length] - :response-time ms')
 app.use(morgan('custom'))
