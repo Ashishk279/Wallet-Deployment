@@ -8,7 +8,7 @@ import { walletRoutes } from './routes/wallet.js';
 
 const app = express();
 
-app.get("/", (req, res) => res.send("Express on Vercel"));
+app.get("/", (req, res) => res.send("Express on Vercel."));
 app.use((req, res, next) => {
     res.append('Access-Control-Expose-Headers', 'x-total, x-total-pages');
     next();
