@@ -36,7 +36,7 @@ function App() {
 
         setAddress(response.data.data.address);
         setBalance(response.data.data.balance);
-
+        
         alert(`Successfully connected with Metamask: ${selectedAccount}`);
       } catch (error) {
         alert(`Error connecting with Metamask: ${error.message}`);
